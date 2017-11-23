@@ -31,7 +31,7 @@
   <div>
     <select name="house_id" id="house-selection">
         <% @houses.each do |house| %>
-        <option value=<% house.house_name %>></option>
+        <option value=<%= house.id %>><%= house.house_name %></option>
         <% end %>
     </select>
   </div>

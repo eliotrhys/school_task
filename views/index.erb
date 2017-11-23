@@ -1,6 +1,6 @@
 <% @students.each do |student| %>
   <div>
     <p>Name: <%= student.return_name %> </p>
-    <p>House: <%= student.return_house_id %></p>
+    <p>House: <%= student.house.house_name %></p>
   </div>
 <% end %>

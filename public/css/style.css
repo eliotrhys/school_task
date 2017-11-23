@@ -1,0 +1,26 @@
+body {
+  background-color: #ff006a;
+  color: white;
+  text-align: center;
+  align-content: center;
+  font-family: arial;
+  font-size: 36px;
+}
+
+button {
+    color:#050;
+    font: old 84% 'trebuchet ms',helvetica,sans-serif;
+    background-color:#fed;
+    border:1px solid;
+    border-color: #696 #363 #363 #696;
+    size: 450%;
+}
+
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
