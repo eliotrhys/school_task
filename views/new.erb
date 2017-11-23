@@ -1,0 +1,41 @@
+<form method="post" action="/students">
+
+  <div>
+    <label for="first-name-field" class="label">First Name:</label>
+    <div>
+      <input
+        type="text"
+        name="first_name"
+        id="first-name-field"
+        placeholder="First name"
+        required
+      />
+   </div>
+  </div>
+
+  <div>
+    <label for="last-name-field">Last Name:</label>
+    <div>
+      <input
+        type="text"
+        name="last_name"
+        id="last-name-field"
+        placeholder="Last name"
+        required
+      />
+    </div>
+  </div>
+
+<div>
+  <label for="house-selection">House:</label>
+  <div>
+    <select name="house_id" id="house-selection">
+        <% @houses.each do |house| %>
+        <option value=<% house.house_name %>></option>
+        <% end %>
+    </select>
+  </div>
+</div>
+
+  <button>Add student!</button>
+</form>
